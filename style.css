@@ -1,0 +1,166 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+html{
+    color:#fff;
+    font-size:62.5%;
+}
+body{
+    height:100vh;
+    background-color:#3b4156;
+    font-family: "Urbanist", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+p{
+    font-size:9.8rem;
+    letter-spacing:0.1rem;
+    line-height:1.6rem;
+    color: #fb6087;
+}
+.container{
+    width:90%;
+    max-width:140rem;
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+    display:flex;
+    justify-content:center;
+}
+.clockHolder{
+    width:72rem;
+    background-color:#1b252a;
+    padding:3rem 5rem;
+    border-radius:1.5rem;
+    -webkit-border-radius:1.5rem;
+    -moz-border-radius:1.5rem;
+    -ms-border-radius:1.5rem;
+    -o-border-radius:1.5rem;
+    border:3px solid #f5ee62;
+    box-shadow: rgba(222, 238, 42, 0.1) 0rem 0.4rem 0.6rem;
+    position: relative;
+}
+.clockHolder::after{
+    content:" ";
+    position:absolute;
+    bottom:-1.5rem;
+    left:50%;
+    width:70%;
+    height:1.5rem;
+    background-color:#f5ee62;
+    transform:translate(-50%,0);
+    -webkit-transform:translate(-50%,0);
+    -moz-transform:translate(-50%,0);
+    -ms-transform:translate(-50%,0);
+    -o-transform:translate(-50%,0);
+    border-radius:0.3rem 0.3rem 0.8rem 0.8rem;
+    -webkit-border-radius:0.3rem 0.3rem 0.8rem 0.8rem;
+    -moz-border-radius:0.3rem 0.3rem 0.8rem 0.8rem;
+    -ms-border-radius:0.3rem 0.3rem 0.8rem 0.8rem;
+    -o-border-radius:0.3rem 0.3rem 0.8rem 0.8rem;
+}
+.clockHolder::before{
+    content:"";
+    position:absolute;
+    background-color:#f5ea4b77;
+    width:110%;
+    height:1rem;
+    bottom:-2.5rem;
+    left:-5%;
+    border-radius:100%;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    -ms-border-radius:100%;
+    -o-border-radius:100%;
+    filter:blur(0.5rem);
+    -webkit-filter:blur(0.5rem);
+}
+.timeHolder{
+    display:flex;
+    gap:3.2rem;
+    align-items: center;
+}
+.timeOptions{
+    display:flex;
+    flex-direction:column;
+    justify-items:start;
+    gap:1.2rem;
+    color:aliceblue;
+}
+.maindiv{
+    width:100%;
+    height:15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#clock{
+   
+    font-size:9.8rem;
+}
+@media(width<=1400px)
+{
+    html{
+        font-size:56.25%;
+    }
+}
+@media(width<=1220px)
+{
+    html{
+        font-size:54%;
+    }
+}
+@media(width<=1000px)
+{
+    html{
+        font-size:50%;
+    }
+}
+
+@media(width<=850px)
+{
+    html{
+        font-size:45%;
+    }
+}
+@media(width<=700px)
+{
+    html{
+        font-size:42%;
+    }
+}
+@media(width<=550px)
+{
+    html{
+        font-size:32%;
+    }
+}
+@media(width<=450px)
+{
+    html{
+        font-size:30%;
+    }
+}
+@media(width<=400px)
+{
+    html{
+        font-size:27%;
+    }
+}
+@media(width<=370px)
+{
+    html{
+        font-size:20%;
+    }
+}
+@media(width<=300px)
+{
+    html{
+    font-size:15%;
+    }
+}
